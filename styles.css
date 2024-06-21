@@ -202,7 +202,7 @@ header {
 }
 
 #nav-content li a:hover {
-    color: #51B167;
+    color: #718C9E;
     font-weight: bold;
 }
 
@@ -342,7 +342,7 @@ input[type="checkbox"] {
 .article_body {
     background-color: #FFFFFF;
     color: #000000;
-    border: 1px solid #51B167;
+    border: 1px solid #718C9E;
     border-radius: 5px;
     margin: 8px;
 }
@@ -357,7 +357,7 @@ input[type="checkbox"] {
 
 .list_content {
     width: 100%;
-    border: 1px solid #51B167;
+    border: 1px solid #718C9E;
     border-radius: 5px;
     flex: 1 1 calc(50% - 16px); /* Default to 2 items per row with space between */
 
@@ -365,7 +365,7 @@ input[type="checkbox"] {
 
 .list_content .culumn_heading {
     padding: 12px;
-    background-color: #51B167;
+    background-color: #718C9E;
     color: #FFFFFF;
     font-weight: bold;
     text-align: center;
@@ -402,7 +402,7 @@ input[type="checkbox"] {
     border-radius: 50%;
     height: 6px;
     width: 6px;
-    background-color: #51B167;
+    background-color: #718C9E;
     display: block;
     margin-top: 8px;
     margin-right: 8px;
@@ -449,8 +449,8 @@ article p .badge {
 
 .grid_item {
     padding: 10px 15px;
-    border: 1px solid #51B167;
-    border-left: 4px solid #51B167;
+    border: 1px solid #718C9E;
+    border-left: 4px solid #718C9E;
     border-radius: 5px;
     text-align: left;
     background-color: #fff;
@@ -495,8 +495,8 @@ article p .badge {
 .article_body h5 {
     font-size: 18px;
     text-align: center;
-    border-top: 1px solid #51B167;
-    border-bottom: 1px solid #51B167;
+    border-top: 1px solid #718C9E;
+    border-bottom: 1px solid #718C9E;
     display: block;
     justify-content: center;
     align-items: center;
@@ -515,7 +515,7 @@ article p .badge {
 }
 
 .hero {
-    border-bottom: 1px solid #51B167;
+    border-bottom: 1px solid #718C9E;
 }
 
 .ul_content,
@@ -656,7 +656,7 @@ footer a {
     header {
         position: absolute;
         border-style: none none double;
-        border-color: #51B167;
+        border-color: #718C9E;
     }
 
     nav {
