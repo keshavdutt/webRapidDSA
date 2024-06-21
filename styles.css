@@ -350,6 +350,7 @@ input[type="checkbox"] {
 .culumns {
     display: flex;
     width: 100%;
+    flex-wrap: wrap;
     gap: 8px;
     padding-bottom: 0;
 }
@@ -358,6 +359,8 @@ input[type="checkbox"] {
     width: 100%;
     border: 1px solid #51B167;
     border-radius: 5px;
+    flex: 1 1 calc(50% - 16px); /* Default to 2 items per row with space between */
+
 }
 
 .list_content .culumn_heading {
@@ -609,6 +612,8 @@ footer a {
     .list_content {
         margin-bottom: 0;
         padding: 0;
+        flex: 1 1 100%; /* Single item per row */
+
     }
 
     .grid_container {
