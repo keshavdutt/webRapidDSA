@@ -619,17 +619,6 @@ footer a {
 
 }
 
-
-@media(max-width:360px) {
-
-    .grid_container {
-        grid-template-columns: 1fr;
-        margin: 8px;
-        margin-bottom: 0;
-    }
-
-}
-
 @media (min-width: 768px) {
 
     .list_content,
