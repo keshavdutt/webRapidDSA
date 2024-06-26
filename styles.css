@@ -934,3 +934,25 @@ footer a {
     padding-top:0;
     padding-bottom:0;
 }
+
+
+
+pre {
+    background-color: #2d2d2d;
+    /* border-radius: 5px; */
+    padding: 15px;
+    overflow-x: auto;
+}
+
+code {
+    font-family: 'Courier New', Courier, monospace;
+    color: #f8f8f2;
+}
+
+.code-block {
+    background-color: #2d2d2d;
+    color: #f8f8f2;
+    /* padding: 10px; */
+    /* border-radius: 5px; */
+    display: block;
+}

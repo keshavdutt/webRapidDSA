@@ -27,9 +27,9 @@
             <a href="index.html">
                 <!-- <img src="https://sarkariprep.in/assets/sarkariprep.svg" alt="Sarkariprep.in" width="220px"
                     height="35px"> -->
-                    <h2>Rapid DSA</h2>
+                <h2>Rapid DSA</h2>
             </a>
-            
+
         </div>
     </header>
     <nav id="nav-container">
@@ -127,58 +127,64 @@
                 </div>
                 <h2>Nearest Greatest Element to the Right</h2>
                 <div class="table_content table_shadow">
+                    <pre><code class="code-block">
+function nearestGreaterToRight(arr) {
+    let stack = [];
+    let result = new Array(arr.length);
+
+    for (let i = arr.length - 1; i >= 0; i--) {
+        // Remove elements that are less than or equal to the current element
+        while (stack.length !== 0 && stack[stack.length - 1] <= arr[i]) {
+            stack.pop();
+        }
+
+        // If stack is empty, no greater element to the right
+        if (stack.length === 0) {
+            result[i] = -1;
+        } else {
+            // The top element is the nearest greater element
+            result[i] = stack[stack.length - 1];
+        }
+
+        // Push the current element onto the stack
+        stack.push(arr[i]);
+    }
+
+    return result;
+}
+
+// Example usage:
+let arr = [4, 5, 2, 10, 8];
+console.log(nearestGreaterToRight(arr)); // Output: [5, 10, 10, -1, -1]
+                         </code></pre>
+                </div>
+
+                <div class="table_content table_shadow">
                     <table>
                         <caption>
-                            <h2>रेलवे प्रोटेक्शन फोर्स कांस्टेबल भर्ती 2024</h2>
+                            <h2>Time and Space Complexity</h2>
                         </caption>
                         <tbody>
                             <tr>
-                                <td>संस्था का नाम</td>
-                                <td>रेलवे प्रोटेक्शन फोर्स</td>
+                                <td>Time Complexity</td>
+                                <td>O(n)</td>
                             </tr>
                             <tr>
-                                <td>पद का नाम</td>
-                                <td>कांस्टेबल</td>
-                            </tr>
-                            <tr>
-                                <td>कुल वैकेंसी</td>
-                                <td>4208 पद</td>
-                            </tr>
-                            <tr>
-                                <td>शैक्षणिक योग्यता</td>
-                                <td>10वीं / 12वीं</td>
-                            </tr>
-                            <tr>
-                                <td>आयु सीमा</td>
-                                <td>18 वर्ष से 35 वर्ष</td>
-                            </tr>
-                            <tr>
-                                <td>वेतन</td>
-                                <td>21700 /- रुपया महीना</td>
-                            </tr>
-                            <tr>
-                                <td>चयन प्रक्रिया</td>
-                                <td>सीबीटी / पीईटी / पीएसटी</td>
-                            </tr>
-                            <tr>
-                                <td>आवेदन प्रारंभ तिथि</td>
-                                <td>15/04/2024</td>
-                            </tr>
-                            <tr>
-                                <td>समाप्ति तिथि</td>
-                                <td>14/05/2024</td>
+                                <td>Space Complexity</td>
+                                <td>O(n)</td>
                             </tr>
                         </tbody>
                     </table>
-                    <div class="btn">
+                    <!-- <div class="btn">
                         <a href="https://sarkariprep.in/rpf-constable-bharti-2024.html" target="_blank">
                             <div class="job_details">विभागीय विज्ञापन</div>
                         </a>
                         <a href="https://sarkariprep.in/rpf-constable-bharti-2024.html" target="_blank">
                             <div class="apply_now">ऑनलाइन फॉर्म</div>
                         </a>
-                    </div>
+                    </div> -->
                 </div>
+
                 <!-- 
                 <div class="table_content table_shadow">
                     <table>
