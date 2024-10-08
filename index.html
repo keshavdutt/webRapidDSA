@@ -6,87 +6,110 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Rapid DSA - Launching Soon</title>
     <style>
-        /* Global styles */
-        body {
+        /* Global reset */
+        * {
             margin: 0;
-            font-family: 'Helvetica Neue', sans-serif;
-            background-color: #121212;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://source.unsplash.com/1600x900/?technology,coding') no-repeat center center/cover;
             color: #fff;
             display: flex;
             justify-content: center;
             align-items: center;
-            min-height: 100vh;
+            height: 100vh;
+            overflow: hidden;
         }
 
         /* Container styling */
         .container {
             text-align: center;
-            padding: 2rem;
-            max-width: 800px;
-            background: rgba(255, 255, 255, 0.05);
+            background: rgba(0, 0, 0, 0.6);
+            padding: 3rem 2rem;
             border-radius: 15px;
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(8px);
+            max-width: 800px;
+            width: 90%;
+            animation: fadeIn 1s ease-in-out;
         }
 
         /* Title styles */
         h1 {
-            font-size: 4rem;
-            font-weight: bold;
-            letter-spacing: 3px;
-            color: #00d9ff;
+            font-size: 4.5rem;
+            font-weight: 700;
+            letter-spacing: 4px;
             margin-bottom: 1rem;
+            background: linear-gradient(to right, #00d9ff, #00ff6e);
+            -webkit-background-clip: text;
+            color: transparent;
         }
 
-        /* Subheading */
         h2 {
-            font-size: 1.8rem;
-            color: #00d9ff;
+            font-size: 2rem;
+            font-weight: 500;
             margin-bottom: 2rem;
+            color: #e0e0e0;
         }
 
         /* Paragraph styling */
         p {
             font-size: 1.2rem;
-            line-height: 1.6;
-            color: #ddd;
-            margin-bottom: 2rem;
+            line-height: 1.8;
+            color: #b3b3b3;
+            margin-bottom: 2.5rem;
         }
 
         /* CTA Button */
         .launch-button {
-            padding: 12px 40px;
-            font-size: 1.1rem;
+            padding: 14px 45px;
+            font-size: 1.2rem;
             font-weight: bold;
             color: #121212;
             background-color: #00d9ff;
             border: none;
-            border-radius: 25px;
+            border-radius: 30px;
             cursor: pointer;
             transition: all 0.3s ease;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
         }
 
         .launch-button:hover {
             background-color: #00a3d9;
-            transform: scale(1.05);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+            transform: scale(1.1);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.6);
         }
 
         /* Footer */
         footer {
-            margin-top: 3rem;
+            margin-top: 2rem;
             color: #888;
-            font-size: 0.9rem;
+            font-size: 0.85rem;
+        }
+
+        /* Keyframe Animation */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
 
         /* Media Queries for responsiveness */
         @media (max-width: 768px) {
             h1 {
-                font-size: 3rem;
+                font-size: 3.5rem;
             }
 
             h2 {
-                font-size: 1.5rem;
+                font-size: 1.6rem;
             }
 
             p {
@@ -94,7 +117,7 @@
             }
 
             .launch-button {
-                padding: 10px 30px;
+                padding: 10px 35px;
             }
         }
     </style>
@@ -105,16 +128,11 @@
         <h1>Rapid DSA</h1>
         <h2>Launching Soon</h2>
         <p>
-            Rapid DSA is your one-stop solution to rapidly prepare for your next job interview. 
-            Harness the power of AI to practice and perfect your Data Structures and Algorithms (DSA) skills.
-            Whether you're a fresh graduate or a seasoned coder, our platform is designed to give you the 
-            edge you need to land that dream job.
+            Rapidly prepare for your next job interview with cutting-edge AI technology. Rapid DSA 
+            helps you master Data Structures and Algorithms (DSA) efficiently, with AI-driven problem 
+            sets and feedback tailored to accelerate your learning journey. Whether you're new to coding or an experienced pro, Rapid DSA prepares you for success.
         </p>
-        <p>
-            Join us to get access to expertly crafted problem sets, tailored learning paths, and AI-driven 
-            feedback to accelerate your learning journey.
-        </p>
-        <button class="launch-button">Get Notified</button>
+        <button class="launch-button">Notify Me</button>
 
         <footer>&copy; 2024 Rapid DSA | All Rights Reserved</footer>
     </div>
